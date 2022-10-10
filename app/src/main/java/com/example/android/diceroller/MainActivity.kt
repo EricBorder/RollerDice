@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-
         // TODO (02) Use findViewById to get a reference to the button
         // and assign it to an immutable variable called rollButton
 
