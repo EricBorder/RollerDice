@@ -20,11 +20,13 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
     // TODO (01) Extract the image view variable here. You will need to use lateinit
+    lateinit var diceImage: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
         }
+        diceImage = findViewById(R.id.dice_image)
 
         // TODO (02) Initialize the image view variable here
     }
@@ -41,16 +44,16 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
         val randomInt = Random().nextInt(6) + 1
         val drawableResource = when (randomInt) {
-            1 -> R.drawable.dice_1
-            2 -> R.drawable.dice_2
-            3 -> R.drawable.dice_3
-            4 -> R.drawable.dice_4
-            5 -> R.drawable.dice_5
-            else -> R.drawable.dice_6
+            1 -> R.drawable.uno
+            2 -> R.drawable.dos
+            3 -> R.drawable.tres
+            4 -> R.drawable.cuatro
+            5 -> R.drawable.cinco
+            else -> R.drawable.seis
         }
 
         // TODO (03) Remove this local variable so that you use your new diceImage field
-        val diceImage: ImageView = findViewById(R.id.dice_image)
         diceImage.setImageResource(drawableResource)
+
     }
 }
