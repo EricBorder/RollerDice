@@ -18,8 +18,9 @@ package com.example.android.diceroller
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,13 +30,14 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener {
-            // TODO (02) Remove the Toast and instead create a method called rollDice here. You can
-            // use the keyboard shortcut:
-            //    Windows/Linux - Alt + Enter
-            //    Mac - Option + Enter
+          rollDice()
 
-            Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show()
         }
+
+        // TODO (02) Remove the Toast and instead create a method called rollDice here. You can
+        // use the keyboard shortcut:
+        //    Windows/Linux - Alt + Enter
+        //    Mac - Option + Enter
 
         // TODO (03) In rollDice get a Random int between 1 and 6
 
@@ -44,5 +46,13 @@ class MainActivity : AppCompatActivity() {
 
         // TODO (05) In rollDice set the random value that you got above as the
         // text of the TextView
+    }
+
+    private fun rollDice() {
+        val randomInt = (1..6).random()
+
+        val resultText: TextView = findViewById(R.id.result_text)
+        resultText.text = randomInt.toString()
+
     }
 }
