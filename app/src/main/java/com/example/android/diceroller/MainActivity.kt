@@ -35,18 +35,18 @@ class MainActivity : AppCompatActivity() {
             rollDice()
         }
 
-        diceImage = findViewById(R.id.dice_image)
+        diceImage = findViewById(R.id.image)
     }
 
     private fun rollDice() {
         val randomInt = Random().nextInt(6) + 1
         val drawableResource = when (randomInt) {
-            1 -> R.drawable.uno
-            2 -> R.drawable.dos
-            3 -> R.drawable.tres
-            4 -> R.drawable.cuatro
-            5 -> R.drawable.cinco
-            else -> R.drawable.seis
+            1 -> R.drawable.goku
+            2 -> R.drawable.gohan
+            3 -> R.drawable.gokugt
+            4 -> R.drawable.buuhan
+            5 -> R.drawable.piccolo
+            else -> R.drawable.vegeku
         }
 
         diceImage.setImageResource(drawableResource)
