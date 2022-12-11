@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice() {
-        val randomInt = Random().nextInt(6) + 1
+        //cambiada función random por otra forma
+        val randomInt = (1..6).random()
         val drawableResource = when (randomInt) {
             1 -> R.drawable.goku
             2 -> R.drawable.gohan
