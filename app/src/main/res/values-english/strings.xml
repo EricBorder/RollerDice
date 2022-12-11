@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dice Roller</string>
+    <string name="roll">Roll</string>
+    <string name="pressed_message">Button pressed</string>
+    <string name="app_content">A dice with his many faces</string>
+    <string name="button_text">Roll</string>
+</resources>

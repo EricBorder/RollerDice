@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Dice Roller</string>
     <string name="roll">Roll</string>
+    <string name="mensaje_pulsado">Botón pulsado</string>
+    <string name="contenido_app">Un dado con distintas caras</string>
+    <string name="texto_boton">Roll</string>
 </resources>

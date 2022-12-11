@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nom_de_l'application">Dice Roller</string>
+    <string name="roleau">Roleau</string>
+    <string name="message_pressé">Bouton enfoncé</string>
+    <string name="texte_bouton">Roleau</string>
+</resources>
