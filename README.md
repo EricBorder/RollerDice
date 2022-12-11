@@ -7,7 +7,7 @@ Para poder utilizar la app con diferentes idiomas se utilizan los recursos de st
 Creamos en values  un nuevo fichero con el nombre strings dónde  cambiaremos el nombre de la app y el texto según idiomas.
 Aquí añado una captura de como se hace.
 
-![Foto](C:\Users\magic\RollerDice\app\src\main\res\drawable\strings.png)
+![Foto](https://github.com/EricBorder/RollerDice/blob/modificaciones/app/src/main/res/drawable/strings.png)
 
 
 Estos strings se llaman en  el layout para para que los elementos de la aplicación cambien de idiomas.
