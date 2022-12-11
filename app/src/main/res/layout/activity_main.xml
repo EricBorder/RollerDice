@@ -14,29 +14,47 @@
   ~ limitations under the License.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--Se cambia la distribución del layout, de linearLayout a constraintlayout -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center_vertical"
     android:orientation="vertical"
+    android:rotation="0"
     tools:context=".MainActivity">
 
-    <!-- TODO (02) Use app:srcCompat for the image; you'll need to add the namespace
-      xmlns:app="http://schemas.android.com/apk/res-auto" -->
+    <!--Se añade una imagen que aparecerá por defecto-->
+
+    <!-- Al poner android:text="@string/roll" El texto del boton cambia segun los string, es decir,
+    segun los idiomas que se seleccione en el movil-->
     <ImageView
-        android:id="@+id/dice_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/uno" />
+        android:id="@+id/image"
+        android:layout_width="411dp"
+        android:layout_height="470dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="120dp"
+        android:contentDescription="@null"
+        android:src="@drawable/uno"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.469" />
 
     <Button
         android:id="@+id/roll_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/roll" />
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="500dp"
+        android:text="@string/roll"
+        app:icon="@drawable/goku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
